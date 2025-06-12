@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-family: "Roboto-Bold";
+    font-size: 20px;
+}
+
+.texto {
+    font-family: "Roboto-Light";
+    font-size: 22px;
+}
+
+/* FONTES */
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(./Fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(./Fonts/RobotoSlab-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(./Fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(./Fonts/RobotoSlab-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Spline-Sans";
+    src: url(./Fonts/SplineSansMono-VariableFont_wght.ttf);
+}
+
+:root {
+    --preto: #000;
+    --branco: #fff;
+    --laranjaAraxa: #E94E1B;
+    --laranEscurojaAraxa: #db3700;
+    --VermelhaAlaranjado: #BF3000;
+}
+
+/* ------------- BANNER ------------- */
+
+.banner {
+    background-image: url(./Img/BannerFloresta.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 200px;
+}
+
+header img {
+    width: 300px;
+}
+
+nav {
+    background-color: var(--laranjaAraxa);
+    height: 80px;
+    width: 5px;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container-grid {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    max-width: 700px;
+    width: 70%;
+    display: flex;
+    gap: 120px;
+}
+
+.menu a {
+    font-size: 27px;
+    color: var(--preto);
+    font-family: "Roboto-regular";
+    text-decoration: underline transparent;
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: var(--preto);
+}
+
+.conteudo-banner {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteudo-banner p {
+    font-size: 70px;
+    font-family: "Spline-Sans", semibold;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+/* ------------- SOBRE ------------- */
+
+#sobre {
+    display: flex;
+    margin-top: 60px;
+    gap: 100px;
+}
+
+#sobre img {
+    height: 350px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.conteudo-sobre p {
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+/* ------------- PARALLAX ------------- */
+
+#parallax {
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./Img/Parallax.svg);
+    margin-top: 120px;
+    margin-bottom: 100px;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+/* ------------- PEÇAS ------------- */
+
+#pecas div.titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/* ------------- COLEÇÕES ------------- */
+
+#colecoes div.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+#cardfileira1 {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    margin-bottom: 50px;
+}
+
+#cardinverno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cardverao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#cardfileira2 {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    margin-bottom: 50px;
+}
+
+#cardelegante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cardelegante img,
+#cardminimalista img,
+#cardinverno img,
+#cardverao img {
+    width: 350px;
+}
+
+#cardelegante p,
+#cardminimalista p,
+#cardinverno p,
+#cardverao p {
+    font-size: 20px;
+}
+
+#cardminimalista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-cars {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-bottom: 300px;
+}
+
+#cardminimalista p,
+#cardelegante p {
+    color: var(--branco);
+}
+
+.linha-laranja {
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(360deg, rgba(97, 0, 7, 1) 10%, rgba(255, 85, 0, 1) 90%);
+    position: absolute;
+    z-index: -1;
+    top: calc(372% - 125px);
+}
+
+/* .cardverao img:hover  {
+    border: solid 3px var(--laranjaAraxa);
+} */
+
+.categoria:hover {
+    color: var(--laranjaAraxa);
+}
+
+#cardfileira2 .categoria:hover {
+    color: var(--laranjaAraxa);
+}
+
+/* ------------- FORMULARIO ------------- */
+
+#formulario div.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+#formulario {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+#formulario form {
+    max-width: 980px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 70px;
+    background-color: var(--VermelhaAlaranjado);
+    color: var(--Preto);
+    font-family: "Roboto-Regular";
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+    color: var(--preto);
+    background-color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: var(--Preto);
+    background-color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Roboto-Regular";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var();
+}
+
+#formulario form button {
+    height: 40px;
+    width: 60%;
+    background-color: var(--laranjaAraxa);
+    color: var(--branco);
+    border: none;
+    border-radius: 40px;
+    font-family: "Roboto-Regular";
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+#formulario form button:hover{
+    background-color: var(--laranEscurojaAraxa);
+}   
+
+/* ------------- FOOTER ------------- */
+
+footer{
+    height: 250px;
+    background-image: url(./Img/Footer.png);
+}
+
+footer img{
+    height: 135px;
+}
+
+footer .container-grid{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p{
+    color: var(--branco);
+    font-family: "Roboto-bold";
+    font-size: 40px;
+}
+
+.icones-redes{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a{
+    color: var(--branco);
+}
+
+.icones-redes a:hover{
+    color: var(--laranjaAraxa);
+}

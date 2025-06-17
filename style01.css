@@ -168,14 +168,33 @@ header .container-grid {
     margin-bottom: 100px;
 }
 
+/* ------ CASES ------ */Add commentMore actions
+
+#cases h2{
+    margin-right: 5px;
+}
+
+#cases{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+#cases img{
+    height: 300px;
+    border-radius: 40px;
+}
+
+#meuCarrossel{
+    max-width: 1170px;
+    width: 90%;
+}
+
 /* ------------- COLEÇÕES ------------- */
 
-#colecoes div.titulo {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 75px;
-}
+/* 
 
 #cardfileira1 {
     display: flex;
@@ -240,7 +259,39 @@ header .container-grid {
 #cardminimalista p,
 #cardelegante p {
     color: var(--branco);
+} */
+
+
+#colecoes div.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
+
+.card p {
+    font-family: "Roboto-Regular";
+    font-size: 26px
+}
+
+#fileira1,
+#fileira2 {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 350px;
+}
+
 
 .linha-laranja {
     height: 250px;
@@ -251,16 +302,24 @@ header .container-grid {
     top: calc(372% - 125px);
 }
 
-/* .cardverao img:hover  {
-    border: solid 3px var(--laranjaAraxa);
-} */
-
-.categoria:hover {
+.card:hover {
     color: var(--laranjaAraxa);
 }
 
-#cardfileira2 .categoria:hover {
+#fileira1,
+#fileira2 .categoria:hover {
     color: var(--laranjaAraxa);
+}
+
+.card img {
+    transition: border 0.3s ease;
+    border: 3px solid transparent;
+    border-radius: 40px;
+}
+
+.card img:hover {
+    border: 3px solid orange;
+    border-radius: 40px;
 }
 
 /* ------------- FORMULARIO ------------- */
@@ -365,29 +424,33 @@ header .container-grid {
     transition: background-color 500ms;
 }
 
-#formulario form button:hover{
+#formulario form button:hover {
     background-color: var(--laranEscurojaAraxa);
-}   
+}
+
+div.campo label , div.campo-descricao label{
+    color: var(--branco);
+}
 
 /* ------------- FOOTER ------------- */
 
-footer{
+footer {
     height: 250px;
     background-image: url(./Img/Footer.png);
 }
 
-footer img{
+footer img {
     height: 135px;
 }
 
-footer .container-grid{
+footer .container-grid {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.redes-sociais{
+.redes-sociais {
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -395,22 +458,22 @@ footer .container-grid{
     align-items: flex-end;
 }
 
-.redes-sociais p{
+.redes-sociais p {
     color: var(--branco);
     font-family: "Roboto-bold";
     font-size: 40px;
 }
 
-.icones-redes{
+.icones-redes {
     width: 240px;
     display: flex;
     justify-content: space-between;
 }
 
-.icones-redes a{
+.icones-redes a {
     color: var(--branco);
 }
 
-.icones-redes a:hover{
+.icones-redes a:hover {
     color: var(--laranjaAraxa);
 }

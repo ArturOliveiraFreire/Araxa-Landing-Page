@@ -168,7 +168,12 @@ header .container-grid {
     margin-bottom: 100px;
 }
 
-/* ------ CASES ------ */Add commentMore actions
+#pecas div#meuCarrossel{
+    display: flex;
+    justify-content: center;
+}
+
+/* ------ CASES ------ */
 
 #cases h2{
     margin-right: 5px;
@@ -190,77 +195,10 @@ header .container-grid {
 #meuCarrossel{
     max-width: 1170px;
     width: 90%;
+    margin-bottom: 200px;
 }
 
 /* ------------- COLEÇÕES ------------- */
-
-/* 
-
-#cardfileira1 {
-    display: flex;
-    justify-content: center;
-    gap: 170px;
-    margin-bottom: 50px;
-}
-
-#cardinverno {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#cardverao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-#cardfileira2 {
-    display: flex;
-    justify-content: center;
-    gap: 170px;
-    margin-bottom: 50px;
-}
-
-#cardelegante {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#cardelegante img,
-#cardminimalista img,
-#cardinverno img,
-#cardverao img {
-    width: 350px;
-}
-
-#cardelegante p,
-#cardminimalista p,
-#cardinverno p,
-#cardverao p {
-    font-size: 20px;
-}
-
-#cardminimalista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container-cars {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-bottom: 300px;
-}
-
-#cardminimalista p,
-#cardelegante p {
-    color: var(--branco);
-} */
-
 
 #colecoes div.titulo {
     display: flex;
@@ -282,10 +220,13 @@ header .container-grid {
     margin: 50px;
 }
 
-.card {
+#fileira1 .card , #fileira2 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: transparent;
+    border-radius: 40px;
+    background: transparent;
 }
 
 .card img {
@@ -299,7 +240,7 @@ header .container-grid {
     background: linear-gradient(360deg, rgba(97, 0, 7, 1) 10%, rgba(255, 85, 0, 1) 90%);
     position: absolute;
     z-index: -1;
-    top: calc(372% - 125px);
+    top: calc(472% - 125px);
 }
 
 .card:hover {
